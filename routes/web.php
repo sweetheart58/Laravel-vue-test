@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\MainController;
+use App\Http\Controllers\UrlController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 //
-Route::get("/", [MainController::class, 'index']);
-Route::get("/home", [MainController::class, 'index']);
-Route::post("sendUrl", [MainController::class, 'insertUrl']);
-Route::get("redirect", [MainController::class, 'redirectUrl']);
+Route::get("/", [UrlController::class, 'index']);
+Route::get("/home", [UrlController::class, 'index']);
+Route::post("sendUrl", [UrlController::class, 'insertUrl']);
+Route::get("redirect", [UrlController::class, 'redirectUrl']);
 

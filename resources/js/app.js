@@ -6,7 +6,7 @@ InertiaProgress.init()
 
 createInertiaApp({
   resolve: name => require(`./Pages/${name}`),
-  title: title => title ? `${title} - Vue` : 'Vue',
+  title: title => title ? 'laravel-vue' : 'Vue',
   setup({ el, App, props, plugin }) {
     createApp({ render: () => h(App, props) })
       .use(plugin)
